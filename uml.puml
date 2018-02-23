@@ -1,0 +1,29 @@
+@startuml
+
+class Student {
+    - name: String
+    - age: int
+    + getName(): String
+    + setName(String): void
+    + getAge(): int
+    + setAge(int): void
+    + display(): String
+}
+
+class StudentList {
+    - Student[] students
+    + count(): int
+    + add(Student): void
+    + find(String): Student
+    + displayAll(): Student
+}
+
+class StudentListTest {
+    + main(String[]): void
+}
+
+Student <- StudentList
+Student <.. StudentListTest
+StudentList <. StudentListTest
+
+@enduml
