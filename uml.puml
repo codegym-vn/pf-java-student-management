@@ -10,20 +10,19 @@ class Student {
     + display(): String
 }
 
-class StudentList {
+class StudentManager {
     - Student[] students
-    + count(): int
     + add(Student): void
-    + find(String): Student
-    + displayAll(): Student
+    + find(String): void
+    + displayAll(): void
 }
 
-class StudentListTest {
+class StudentManager {
     + main(String[]): void
 }
 
-Student <- StudentList
-Student <.. StudentListTest
-StudentList <. StudentListTest
+Student <- StudentManager
+Student <.. StudentManagerTest
+StudentManager <. StudentManagerTest
 
 @enduml
