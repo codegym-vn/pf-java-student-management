@@ -17,8 +17,8 @@ class StudentManager {
     + displayAll(): void
 }
 
-class StudentManager {
-    + main(String[]): void
+class StudentManagerTest {
+    + {static} main(String[]): void
 }
 
 Student <- StudentManager
