@@ -7,7 +7,7 @@ class Student {
     + setName(String): void
     + getAge(): int
     + setAge(int): void
-    + display(): String
+    + getInfomation(): String
 }
 
 class StudentManager {

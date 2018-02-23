@@ -35,15 +35,14 @@ public class StudentManager {
             System.out.println("There is no any student in list");
         } else if (size == 1) {
             System.out.println("There is 1 student in list");
-            System.out.print(students[1].display() + "");
+            System.out.print(students[0].getInfomation() + "");
             System.out.println();
         } else {
-            System.out.println("There are " + size + "students list: ");
+            System.out.println("There are " + size + " students list: ");
             for (int i = 0; i < size; i++) {
-                System.out.print(students[i].display() + ", ");
+                System.out.print(students[i].getInfomation() + ", ");
             }
             System.out.println();
         }
     }
-
 }

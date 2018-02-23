@@ -26,7 +26,7 @@ public class Student {
         this.age = age;
     }
 
-    public String display() {
+    public String getInfomation() {
         return "Student{" +
                 "name='" + name + '\'' +
                 ", age=" + age +
